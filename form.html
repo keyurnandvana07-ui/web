@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOGLE FORM</title>
+</head>
+<body>
+  <form action="/submit-student-data" method="POST" >
+  
+  <!-- Personal Information Section -->
+  <fieldset>
+    <legend>Personal Information</legend>
+    
+    <label for="student-id">Student ID / Roll Number:</label>
+    <input type="text" id="student-id" name="student_id"  required>
+    
+    <br><br>
+    
+    <label for="full-name">Full Name:</label>
+    <input type="text" id="full-name" name="full_name" required>
+    
+    <br><br>
+    
+    <label for="email">College Email Address:</label>
+    <input type="email" id="email" name="college_email" placeholder="username@paruluniversity.ac.in" required>
+    
+    <br><br>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+  </fieldset>
+
+  <br>
+
+  <!-- Academic Information Section -->
+  <fieldset>
+    <legend>Academic Details</legend>
+    
+    <label for="department">Department / Major:</label>
+    <select id="department" name="department" required>
+      <option value="">-- Select Your Major --</option>
+      <option value="cs">Computer Science</option>
+      <option value="eng">Engineering</option>
+      <option value="bus">Business Administration</option>
+      <option value="art">Fine Arts</option>
+      <option value="sci">Natural Sciences</option>
+    </select>
+    
+    <br><br>
+    
+    <label>Current Year:</label><br>
+    <input type="radio" id="freshman" name="academic_year" value="1" checked>
+    <label for="freshman">1st Year (Freshman)</label><br>
+    
+    <input type="radio" id="sophomore" name="academic_year" value="2">
+    <label for="sophomore">2nd Year (Sophomore)</label><br>
+    
+    <input type="radio" id="junior" name="academic_year" value="3">
+    <label for="junior">3rd Year (Junior)</label><br>
+    
+    <input type="radio" id="senior" name="academic_year" value="4">
+    <label for="senior">4th Year (Senior)</label>
+    
+    <br><br>
+    
+    <label>Housing Requirement:</label><br>
+    <input type="checkbox" id="hostel" name="housing" value="hostel">
+    <label for="hostel">I require college hostel accommodation</label>
+  </fieldset>
+
+  <br>
+
+  <!-- Document Upload Section -->
+  <fieldset>
+    <legend>Required Documents</legend>
+    <label for="id-proof">Upload ID Proof (PDF or Image):</label>
+    <input type="file" id="id-proof" name="id_proof_file" accept=".pdf, image/*" required>
+  </fieldset>
+
+  <br>
+
+  <!-- Form Submission -->
+  <button type="submit">Submit Registration</button>
+  <button type="reset">Clear Form</button>
+
+</form>
+
+`
+    
+</body>
+</html>

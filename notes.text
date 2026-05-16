@@ -1,0 +1,22 @@
+page structure :---
+<header></header> --- logo , site , title , top of the page 
+<nav></nav> ---- navigation link menu 
+<Main></Main> ----- primary content 
+<article></article> --- slef contnend , poster 
+
+
+<div></div> ---- 
+<section></section>themntcie 
+<aside></aside> 
+<footer></footer> 
+media elements ---- video , autoplay , muted , loops ,
+
+video , audio , iframe tages 
+
+meta tages & head elemensss---
+character utf -8  ----- for emjio  , hindi text , symbols  
+viewport meta  -----    
+
+live server 
+emmet abbbres
+prettier 
